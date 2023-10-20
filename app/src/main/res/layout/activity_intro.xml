@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/intro_background"
+    tools:context=".activities.IntroActivity">
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Projemanag"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="@dimen/intro_screen_title_text_size"
+        android:layout_marginTop="@dimen/intro_screen_title_text_marginTop"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/intro_screen_image_marginTop"
+        android:contentDescription="Person"
+        android:src="@drawable/ic_task_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Get Started"
+        android:layout_marginTop="@dimen/lets_get_started_text_marginTop"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/lets_get_started_text_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/intro_text_marginStartEnd"
+        android:layout_marginTop="@dimen/intro_text_marginTop"
+        android:layout_marginEnd="@dimen/intro_text_marginStartEnd"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/intro_text_line_spacing_extra"
+        android:text="Collaborate and Plan Together Across Multiple\nDevices on Projmanag's Minimalist Interface."/>
+
+    <Button
+        android:id="@+id/btnSignInIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/btn_marginStartEnd"
+        android:layout_marginStart="@dimen/btn_marginStartEnd"
+        android:layout_marginTop="@dimen/intro_screen_sign_in_btn_marginTop"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_paddingTopBottom"
+        android:paddingBottom="@dimen/btn_paddingTopBottom"
+        android:background="@drawable/shape_button_rounded"
+        android:textSize="@dimen/btn_text_size"
+        android:text="SIGN IN"/>
+
+    <Button
+        android:id="@+id/btnSignUpIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/btn_marginStartEnd"
+        android:layout_marginStart="@dimen/btn_marginStartEnd"
+        android:layout_marginTop="@dimen/intro_screen_sign_up_btn_marginTop"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_paddingTopBottom"
+        android:paddingBottom="@dimen/btn_paddingTopBottom"
+        android:textSize="@dimen/btn_text_size"
+        android:background="@drawable/white_border_shape_button_rounded"
+        android:text="SIGN UP"/>
+
+
+
+</LinearLayout>
